@@ -1,84 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boop the Yorkshire Terrier</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f4ee;
-            color: #333;
-            text-align: center;
-            margin: 40px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🐶 Boop's Birthday Countdown</title>
 
-        .card {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        h1 {
-            color: #8b5e3c;
-        }
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg,#ffe4ec,#fff7d6,#dff9fb);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
 
-        h2 {
-            color: #555;
-        }
+.container{
+    width:900px;
+    max-width:100%;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    overflow:hidden;
+}
 
-        img {
-            width: 300px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
+.banner{
+    background:linear-gradient(135deg,#8B5A2B,#D9A15D);
+    color:white;
+    padding:35px;
+    text-align:center;
+}
 
-        ul {
-            text-align: left;
-            display: inline-block;
-        }
+.banner h1{
+    font-size:3rem;
+}
 
-        footer {
-            margin-top: 20px;
-            color: #777;
-            font-size: 0.9em;
-        }
-    </style>
+.banner p{
+    margin-top:10px;
+    font-size:1.2rem;
+    opacity:.95;
+}
+
+.content{
+    padding:35px;
+}
+
+.profile{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    align-items:center;
+    justify-content:center;
+}
+
+.profile img{
+    width:280px;
+    border-radius:18px;
+    border:6px solid #fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.bio{
+    flex:1;
+    min-width:280px;
+}
+
+.bio h2{
+    color:#7A4E1D;
+    margin-bottom:15px;
+}
+
+.bio p{
+    line-height:1.8;
+    color:#444;
+}
+
+.bio ul{
+    margin-top:15px;
+    margin-left:20px;
+    line-height:1.8;
+}
+
+.countdown{
+    margin-top:40px;
+    text-align:center;
+}
+
+.countdown h2{
+    color:#d35400;
+    margin-bottom:20px;
+}
+
+.timer{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.box{
+    width:120px;
+    background:linear-gradient(135deg,#ff9f43,#feca57);
+    color:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.box span{
+    display:block;
+    font-size:2.3rem;
+    font-weight:bold;
+}
+
+.box small{
+    font-size:1rem;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#f7f7f7;
+    color:#666;
+}
+
+@media(max-width:700px){
+    .banner h1{
+        font-size:2.2rem;
+    }
+
+    .box{
+        width:90px;
+    }
+
+    .box span{
+        font-size:1.8rem;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<div class="card">
-    <h1>🐶 Meet Boop!</h1>
-    <h2>A Cute Yorkshire Terrier</h2>
+<div class="container">
 
-    <img src="https://placehold.co/300x300?text=Boop" alt="Boop the Yorkshire Terrier">
+    <div class="banner">
+        <h1>🐶 Boop</h1>
+        <p>The Cutest Yorkshire Terrier ❤️</p>
+    </div>
 
-    <p>
-        Boop is an energetic and lovable Yorkshire Terrier who enjoys spending
-        time with family, playing with toys, and going on daily walks.
-    </p>
+    <div class="content">
 
-    <h3>Boop's Favorite Things</h3>
-    <ul>
-        <li>🎾 Playing fetch</li>
-        <li>🦴 Chewing treats</li>
-        <li>🌳 Exploring the park</li>
-        <li>😴 Cozy naps on the couch</li>
-        <li>❤️ Getting belly rubs</li>
-    </ul>
+        <div class="profile">
 
-    <p>
-        Despite being small, Boop has a big personality and is always ready for
-        a new adventure!
-    </p>
+            <!-- Replace this with a real photo of Boop -->
+            <img src="https://placehold.co/500x500?text=Boop" alt="Boop">
+
+            <div class="bio">
+                <h2>Meet Boop!</h2>
+
+                <p>
+                    Boop is a tiny Yorkshire Terrier with a huge personality.
+                    He loves chasing toys, greeting everyone with excitement,
+                    taking cozy naps, and receiving endless belly rubs.
+                </p>
+
+                <ul>
+                    <li>🎾 Loves playing fetch</li>
+                    <li>🦴 Favorite snack: Chicken treats</li>
+                    <li>🛏️ Professional nap expert</li>
+                    <li>🌳 Enjoys walks in the park</li>
+                    <li>❤️ Always wants cuddles</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="countdown">
+            <h2>🎂 Countdown to Boop's 10th Birthday (20 January)</h2>
+
+            <div class="timer">
+                <div class="box">
+                    <span id="days">0</span>
+                    <small>Days</small>
+                </div>
+
+                <div class="box">
+                    <span id="hours">0</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="box">
+                    <span id="minutes">0</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="box">
+                    <span id="seconds">0</span>
+                    <small>Seconds</small>
+                </div>
+            </div>
+
+            <h3 id="message" style="margin-top:25px;color:#e74c3c;"></h3>
+        </div>
+
+    </div>
+
+    <footer>
+        🐾 Every day with Boop is a wonderful adventure. Happy almost 10th Birthday! 🎉
+    </footer>
+
 </div>
 
-<footer>
-    Made with ❤️ for Boop the Yorkshire Terrier
-</footer>
+<script>
+function getNextBirthday() {
+    const now = new Date();
+
+    // January is month 0
+    let birthday = new Date(now.getFullYear(), 0, 20, 0, 0, 0);
+
+    // If Jan 20 has already passed this year,
+    // count down to next year's Jan 20.
+    if (birthday < now) {
+        birthday = new Date(now.getFullYear() + 1, 0, 20, 0, 0, 0);
+    }
+
+    return birthday;
+}
+
+function updateCountdown() {
+
+    const target = getNextBirthday();
+    const now = new Date();
+
+    const diff = target - now;
+
+    if(diff <= 0){
+        document.getElementById("message").innerHTML =
+            "🎉 Happy 10th Birthday Boop! 🎂";
+        return;
+    }
+
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff / (1000*60*60)) % 24);
+    const minutes = Math.floor((diff / (1000*60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+}
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+</script>
 
 </body>
 </html>
